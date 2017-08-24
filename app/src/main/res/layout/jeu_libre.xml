@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/view3"
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:id="@+id/textViewTemps"
+            android:layout_gravity="center_horizontal"
+            android:textSize="100dp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextReponse"
+        android:layout_gravity="center_horizontal"
+        android:hint="votre proposition" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enovyer ma reponse"
+        android:id="@+id/buttonSendReponse"
+        android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.poste.trouvemoi.MainActivity"
+    android:id="@+id/conteneur"
+    android:background="#616161">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#795548"
+        local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_centerInParent="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativerefuse"
+            android:layout_marginRight="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_layout"
+                android:id="@+id/boutonrefuse"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/refuse"
+                    android:layout_centerInParent="true"></RelativeLayout>
+            </RelativeLayout>
+
+            <com.example.poste.trouvemoi.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewrefuse"
+                android:layout_below="@+id/boutonrefuse"
+                android:layout_centerHorizontal="true"
+                android:text="REFUSER"
+                android:paddingTop="20dp"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeaccept">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false"
+                android:background="@drawable/round_layout"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="false"
+                android:id="@+id/boutonaccept">
+
+                <RelativeLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/accept"
+                    android:layout_alignParentRight="false"></RelativeLayout>
+            </RelativeLayout>
+
+            <com.example.poste.trouvemoi.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textviewaccept"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/boutonaccept"
+                android:text="ACCEPTER"
+                android:paddingTop="20dp"
+                android:textColor="#212121" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/reponseFrame">
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/round_layout_letter"
+                    android:id="@+id/lettreCercle"
+                    android:layout_centerHorizontal="true">
+
+                    <com.example.poste.trouvemoi.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="D"
+                        android:id="@+id/textView4"
+                        android:layout_centerInParent="true"
+                        android:textSize="100dp" />
+                </RelativeLayout>
+
+                <com.example.poste.trouvemoi.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/view"
+                    android:layout_below="@+id/lettreCercle"
+                    android:layout_centerHorizontal="true"
+                    android:text="poulet"
+                    android:textSize="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/accepte"
+                android:alpha="0"
+                android:layout_centerInParent="true"
+                android:background="#212121">
+
+                <com.example.poste.trouvemoi.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="ACCEPTER"
+                    android:id="@+id/textView"
+                    android:layout_alignParentTop="false"
+                    android:textColor="#4caf50"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:background="@drawable/accept"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"></RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:id="@+id/refuse"
+                android:layout_centerInParent="true"
+                android:background="#212121">
+
+                <com.example.poste.trouvemoi.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="REFUSER"
+                    android:id="@+id/textView2"
+                    android:textColor="#f44336"
+                    android:layout_centerInParent="true" />
+
+                <RelativeLayout
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_below="@+id/textView2"
+                    android:background="@drawable/refuse"
+                    android:layout_centerHorizontal="true"></RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
